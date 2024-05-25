@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227894345907",
+    "project_id": "apache-riders",
+    "storage_bucket": "apache-riders.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227894345907:android:ddf5e89010b79bee5570c6",
+        "android_client_info": {
+          "package_name": "com.apache.riders"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGS5HMzfrJczwMay_iTTbKPllmfkKPXQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
