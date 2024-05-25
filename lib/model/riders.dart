@@ -1,3 +1,4 @@
+import 'package:faker/faker.dart';
 class Rider {
   String id;
   String firstName;
@@ -5,8 +6,6 @@ class Rider {
   String club;
 
   Rider({required this.id, required this.firstName, required this.lastName, required this.club});
-
-  final fakeRider = Rider(firstName: 'John', lastName: 'Doe', club: 'Apache Riders', id: '1');
   // Convert a Rider object into a Map object
   Map<String, dynamic> toMap() {
     return {
@@ -22,6 +21,16 @@ class Rider {
       firstName: map['firstName'],
       lastName: map['lastName'],
       club: map['club'],
+    );
+  }
+
+  factory Rider.fakeRider() {
+    var faker = Faker();
+    return Rider(
+      id: faker.guid.guid(),
+      firstName: faker.person.firstName(),
+      lastName: faker.person.lastName(),
+      club: faker.company.name(),
     );
   }
 }

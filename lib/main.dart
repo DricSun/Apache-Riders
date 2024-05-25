@@ -1,23 +1,23 @@
-
-//import 'package:apache_riders/pages/header/header.dart';
-import 'package:apache_riders/pages/home/home.dart';
 import 'package:flutter/material.dart';
 
+import 'main_screen.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
-  const MyApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return const  MaterialApp(
-      title: "Apache Scooter",
+    return MaterialApp(
+      title: "ISL RIDERS",
       debugShowCheckedModeBanner: false,
-        home: Home(),
+      home: MainScreen(),
     );
   }
 }
+
+
 
